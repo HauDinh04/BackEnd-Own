@@ -1,0 +1,16 @@
+
+<div>products Pages</div>
+<ul>
+    <% products.forEach(product => { %>
+      <li>
+
+        <h3><%= product.name %></h3>
+        <h3><%= product.image %></h3>
+        <p><%= product.description %></p>
+        <p><%= product.price %></p>
+        <p><%= product.oldPrice %></p>
+        <p><%= product.tags %></p>
+      </li>
+    <% }) %>
+  </ul>
+  <a href="/product/new">Tạo sản phẩm mới</a>

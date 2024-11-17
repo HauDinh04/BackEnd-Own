@@ -1,0 +1,21 @@
+@media (max-width: 1024px) {
+  .left-nav {
+    display: none;
+  }
+
+  .top-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+  body {
+    font-size: 16px;
+  }
+  main {
+    padding: 20px;
+  }
+}

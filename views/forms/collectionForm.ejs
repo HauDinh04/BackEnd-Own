@@ -1,0 +1,33 @@
+<form
+  action="<%= collection ? '/api/collections/' + collection._id : '/api/collections' %>"
+  method="POST"
+  enctype="multipart/form-data"
+>
+  <!-- Method Override -->
+  <div>
+    <label for="name">Collection Name:</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      value="<%= collection ? collection.name : '' %>"
+      required
+    />
+  </div>
+
+  <div>
+    <label for="image">Upload Image:</label>
+    <input type="file" id="image" name="image" accept="image/*" />
+  </div>
+
+  <div>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description">
+<%= collection ? collection.description : '' %></textarea
+    >
+  </div>
+
+  <button type="submit">
+    <%= collection ? 'Update Collection' : 'Create Collection' %>
+  </button>
+</form>

@@ -1,0 +1,26 @@
+<div class="">collections pages</div>
+<ul>
+  <% collections.forEach(collection => { %>
+  <li>
+    <a href="/collections/edit/<%= collection._id %>">  <h3><%= collection.name %></h3></a>
+  
+
+    <img src="<%= collection.image %>" alt="clothes" />
+
+    <p><%= collection.description %></p>
+    <form
+      action="/api/collections/<%= collection._id %>?_method=DELETE"
+      method="POST"
+      style="display: inline"
+    >
+      <button
+        type="submit"
+        onclick="return confirm('Are you sure you want to delete this collection?')"
+      >
+        Delete
+      </button>
+    </form>
+  </li>
+  <% }) %>
+</ul>
+<a href="/collections/new">Tạo sản phẩm mới</a>

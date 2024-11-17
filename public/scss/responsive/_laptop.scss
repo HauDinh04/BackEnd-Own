@@ -1,0 +1,17 @@
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .left-nav {
+      display: block;
+    }
+  
+    .top-nav {
+      display: none;
+    }
+  
+    main {
+      padding: 20px;
+    }
+    body{
+        font-size: 18px
+    }
+  }
+  

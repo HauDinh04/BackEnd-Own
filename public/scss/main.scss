@@ -1,0 +1,17 @@
+@use "components/leftNavbar" as *;
+@use "base/reset" as *;
+@use "abstracts/color" as c;
+@use "base/typography" as *;
+@use "base/base" as *;
+@use "layout/container" as *;
+@use "responsive/desktop" as *;
+@use "responsive/laptop" as *;
+@use "responsive/tablet" as *;
+@use "responsive/mobile" as *;
+
+body{
+    background-color: c.$body-color;
+}
+.left-nav{
+    background-color: c.$primary-color;
+}
